@@ -34,10 +34,4 @@ opt = RMSprop(learning_rate=0.1)
 regression_nw.compile(optimizer=opt,loss=tf.keras.losses.Huber())
 cv_data = pd.read_csv("/content/sample_data/california_housing_test.csv")
 
-X_cv = cv_data.iloc[:,0:8]
-Y_cv = cv_data.iloc[:,-1]
-Zx = (X - X.mean())/X.std()
-Zx_cv = (X_cv - X_cv.mean())/X_cv.std()
-
-
-regression_nw.fit(x=Zx,y=Y,epochs=1000,batch_size=1700,validation_data=(Zx_cv,Y_cv))
+prine("efnoiwsclke3frn")
